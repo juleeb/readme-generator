@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "automatic readme generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juleeb/readme-generator.git"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "juleeb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juleeb/readme-generator/issues"
+  },
+  "homepage": "https://github.com/juleeb/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "save": "^2.4.0"
+  }
+}
