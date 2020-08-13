@@ -1,5 +1,7 @@
-var fs = require("fs");
-var inquirer = require("inquirer");
+const fs = require("fs");
+const inquirer = require("inquirer");
+const generate = require("./generateMarkdown");
+const axios = require("axios");
 
 inquirer.prompt([
     {
@@ -47,13 +49,27 @@ inquirer.prompt([
     message: "Please provide your Github account name.",
     name: "accout",
     type: "input"
+    }, 
+    {
+    message: "Please provide your email address for further questions by users.",
+    name: "email",
+    type: "input"
     }
-]).then(function(data) {
-    fs.writeFile("readme.md", JSON.stringify(data, null, '\n'), function(err) {
+])
+.then(function(data) {
+    const url = `https://api.github.com/users/${data.account}`;
+    axios.get(url).then(function(response) {
+        const git = {
+            repo: data.response.url,
+            name: data.response.login
+        };
+        
+    fs.writeFile("readme.md", generate(data, git), function(err) {
         if (err) {
             throw err;
         };
-
         console.log("success");
     })
+    })
 })
+

@@ -1,5 +1,7 @@
-
-  #  **f**
+// function to generate markdown for README
+function generateMarkdown(data) {
+  return `
+  #  **${data.title}**
 
   ##  Table of Contents
 
@@ -14,28 +16,37 @@
 
   ## Description
 
-  2
+  ${data.description}
 
   ## Installation
   
-  3
+  ${data.installation}
 
   ## Usage
   
-  4
+  ${data.usage}
 
   ## Contributors
 
-  undefined
+  ${data.contribution}
 
   ## Test
 
-  6
+  ${data.test}
+
+  ## Repository for ${git.name}
+
+  ${git.repo}
 
   ## Question
 
-  - Any questions please email : 
+  Any questions please email : ${data.email}
 
   ## License
 
-  MIT
+  ${data.license}
+
+`;
+}
+
+module.exports = generateMarkdown;
