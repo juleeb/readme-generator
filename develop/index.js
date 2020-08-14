@@ -2,8 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const generate = require("./generateMarkdown");
 const axios = require("axios");
-
-inquirer.prompt([
+questions = [
     {
         message: "Please provide title of the project.", 
         name: "title", 
@@ -55,21 +54,26 @@ inquirer.prompt([
     name: "email",
     type: "input"
     }
-])
-.then(function(data) {
-    const url = `https://api.github.com/users/${data.account}`;
-    axios.get(url).then(function(response) {
-        const git = {
-            repo: data.response.url,
-            name: data.response.login
-        };
-        
-    fs.writeFile("readme.md", generate(data, git), function(err) {
+]
+
+inquirer
+    .prompt(questions)
+
+    .then(function(data) {
+        var user = data.user
+        console.log(user);
+        var giturl = "https://api.github.com/users/" + user;
+        axios
+        .get(giturl)
+        .then(function(response) {
+            console.log(response);
+
+    fs.writeFile("README.md", generate(questions), function(err) {
         if (err) {
             throw err;
         };
         console.log("success");
-    })
-    })
-})
-
+    
+    });
+    });
+});

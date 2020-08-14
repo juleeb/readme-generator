@@ -34,9 +34,9 @@ function generateMarkdown(data) {
 
   ${data.test}
 
-  ## Repository for ${git.name}
+  ## Repository for ${response.data.login}
 
-  ${git.repo}
+  ${response.data.url}
 
   ## Question
 
