@@ -1,5 +1,5 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
+function generateMarkdown(data, gitinfo) {
   return `
   #  **${data.title}**
 
@@ -34,9 +34,9 @@ function generateMarkdown(data) {
 
   ${data.test}
 
-  ## Repository for ${response.data.login}
+  ## Repository for ${gitinfo.name}
 
-  ${response.data.url}
+  ${gitinfo.profile}
 
   ## Question
 
