@@ -5,7 +5,13 @@ Command-line README generator for Github.
 
 Image preview:
 
-<img src="assets/application.png" width="500" height="500">
+-Functionality of the application on terminal
+
+<img src="readmegenerator.gif">
+
+-Final product on README.md file on Visual Studio Code in Preview
+
+<img src="readmefile.png">
 
 Description of project:
 

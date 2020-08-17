@@ -1,5 +1,5 @@
 
-  #  **f**
+  #  **home work 9**
 
   ##  Table of Contents
 
@@ -14,15 +14,15 @@
 
   ## Description
 
-  g
+  readme
 
   ## Installation
   
-  s
+  node js
 
   ## Usage
   
-  df
+  readme generator
 
   ## Contributors
 
@@ -30,7 +30,7 @@
 
   ## Test
 
-  s
+  run script - npm run test
 
   ## Repository for Julee Butler
 
@@ -38,7 +38,7 @@
 
   ## Question
 
-  Any questions please email : ff
+  Any questions please email : test@gmail.com
 
   ## License
 
