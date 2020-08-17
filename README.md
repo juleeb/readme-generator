@@ -7,15 +7,15 @@ Image preview:
 
 -Functionality of the application on terminal
 
-<img src="readmegenerator.gif">
+<img src="image/readmegenerator.gif">
 
 -Final product on README.md file on Visual Studio Code in Preview
 
-<img src="readmefile.png" width="500" height="600">
+<img src="image/readmefile.png" width="500" height="600">
 
 -Final product on README.md on Github
 
-<img src="readmegit.png" width="500" height="600">
+<img src="image/readmegit.png" width="500" height="600">
 
 Description of project:
 
