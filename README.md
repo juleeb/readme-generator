@@ -21,7 +21,8 @@ Description of project:
 
 -Javascript
 
--NPM 
+-NPM:
+
     -axios
     -inquirer
 
