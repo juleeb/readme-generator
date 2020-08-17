@@ -11,7 +11,11 @@ Image preview:
 
 -Final product on README.md file on Visual Studio Code in Preview
 
-<img src="readmefile.png">
+<img src="readmefile.png" width="500" height="600">
+
+-Final product on README.md on Github
+
+<img src="readmegit.png" width="500" height="600">
 
 Description of project:
 
